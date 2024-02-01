@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="create a Ecommers Website using html,css, and javascript">
+    
+    <meta name="keyword" content="Ecommers Check Out Page">
+    
+    <meta name="author" content="Manish Sardhara">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Check Out Page</title>
+
+    <!-- bootstrap fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <!-- link stylesheet file-->
+    <link rel="styleSheet" href="./css/style.css">
+
+</head>
+<body>
+      <!-- header section start -->
+
+      <section id="header">
+
+        <a href="#"><img src="img/logo.png"  class="logo" alt="website-logo-image"></a>
+   
+        <div>
+             <!-- ul part start -->
+             <ul id="navbar">
+             <li><a href="index.html" target="_self">Home</a></li>
+             <li><a href="shop.html" target="_self">Shop</a></li>
+             <li><a href="blog.html" target="_self">Blog</a></li>
+             <li><a href="about.html" target="_self">About</a></li>
+             <li><a  href="contact.html" target="_self">Contact</a></li>
+             <li id="lg-bag"><a class="active" href="cart.html" target="_self"><i class="bi bi-bag bag"></i></a></li>
+             <span id="cartAmount" class="cartAmount">0</span>
+             <a href="#" id="close"><i class="bi bi-x"></i></a>
+             <li><a href="#" id="form-open"><i class="bi bi-person log-icon"></i></a></li>
+             </ul>
+             <!-- ul part end -->
+        </div>
+             <!-- hamburger menu sectio icon section start -->
+             <div class="mobile">
+                  <a href="cart.html" target="_self"><i class="bi bi-bag bag2"></i></a>
+                  <span id="cartAmount" class="cartAmount cartAmountTwo">0</span>
+                  <i id="bar" class="bi bi-list"></i> 
+             </div>
+             <!-- hamburger menu sectio icon section end -->
+        </section>
+   
+        <!-- header section end -->
+         <!-- page-header section start -->
+
+     <section id="page-header" class="about-header cart-header">
+        <h2>#Check_out</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+        </section>
+   
+        <!-- page-header section end -->
+   
+        <!-- chack out page form section start-->
+        <section id="checkOut-FormPage">
+            <form action="success.html" id="checkOut-Form" method="GET">
+     
+             <div class="inputBox">
+                 <span>Name :</span>
+                 <input type="text" id="checkInputName" placeholder="john deo" autocomplete="off" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+             <div class="inputBox">
+                 <span>Email :</span>
+                 <input type="email" id="checkInputEmail" placeholder="example@example.com" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+             <div class="inputBox">
+                 <span>Address :</span>
+                 <input type="text" id="checkInputAdd" placeholder="room - street - locality" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+             <div class="inputBox">
+                 <span>City :</span>
+                 <input type="text" id="checkInputCity" placeholder="Chicago" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+     
+             <div class="flex">
+                 <div class="inputBox inputCheck">
+                     <span>State :</span>
+                     <input type="text" id="checkInputState" placeholder="California" autocomplete="off">
+                     <p>Error Mag</p>
+                 </div>
+                 <div class="inputBox inputCheck">
+                     <span>Zip code :</span>
+                     <input type="text" id="checkInputZip" placeholder="47702"  data-mask="00000" autocomplete="off">
+                     <p>Error Mag</p>
+                 </div>
+             </div>
+     
+             <div class="inputBox">
+                 <span>Cards accepted :</span>
+                 <img src="img/pay/pay.png" alt="">
+             </div>
+             <div class="inputBox">
+                 <span>Name on card :</span>
+                 <input type="text" id="checkInputCardName" placeholder="mr. john deo" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+             <div class="inputBox">
+                 <span>Credit card number :</span>
+                 <input type="text" id="checkInputCardNum" placeholder="1111-2222-3333-4444" data-mask="0000 0000 0000 0000" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+             <div class="inputBox">
+                 <span>Exp month :</span>
+                 <input type="text" id="checkInputExMonth" placeholder="january" autocomplete="off">
+                 <p>Error Mag</p>
+             </div>
+     
+             <div class="flex">
+                 <div class="inputBox inputCheck">
+                     <span>Exp year :</span>
+                     <input type="text" id="checkInputExYear" placeholder="2022"  data-mask="0000" autocomplete="off">
+                     <p>Error Mag</p>
+                    
+                 </div>
+                 <div class="inputBox inputCheck">
+                     <span>CVV :</span>
+                     <input type="text" id="checkInputCvNum" placeholder="123"  data-mask="000" autocomplete="off">
+                     <p>Error Mag</p>
+                 </div>
+             </div>
+     
+            <button type="submit" class="submit-btn">Proceed to Checkout</button>
+            </form>
+         </section>
+<!-- chack out page form section end-->
+
+ <!-- cartContainer section start-->
+    <section class="cartContainer checkout-con">
+     <div class="shopping-cart checkout-cart" id="shopping-cart"> </div>
+     
+     <div id="label" class="label-con check-con-label"></div>
+
+     </section>
+     
+     <!-- cartContainer section end-->
+
+
+
+       <!-- footer section start -->
+
+       <footer class="section-p1">
+
+        <div class="col">
+             <img class="logo" src="img/logo.png" alt="website-logo-image">
+             <h4>Contact</h4>
+             <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+             <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+             <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+             <div class="follow">
+             <h4>Follow us</h4>
+             <div class="icon">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+             </div>
+             </div>
+        </div>
+   
+        <div class="col">
+         <h4>About</h4>
+         <a href="about.html">About Us</a>
+         <a href="#">Delivery Information</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Terms & Conditions</a>
+         <a href="contact.html">Contact Us</a> 
+    </div>
+   
+    <div class="col">
+         <h4>My Account</h4>
+         <a href="#">Sign In</a>
+         <a href="cart.html">View Cart</a>
+         <a href="#">My Wishlist</a>
+         <a href="#">Track My Order</a>
+         <a href="about.html">Help</a> 
+    </div>
+   
+        <div class="col install">
+             <h4>Install App</h4>
+             <p>From App Store or Google Play</p>
+             <div class="row">
+                  <img src="img/pay/app.jpg" alt="pay-image">
+                  <img src="img/pay/play.jpg" alt="pay-image">
+             </div>
+             <p>From App Store or Google Play</p>
+             <img src="img/pay/pay.png" alt="playstore-image">
+        </div>
+   
+        <div class="copyright">
+        <p>Cara © All Rights Reserved.</p>
+        </div>
+   
+        </footer>
+   
+        <!-- footer section end -->
+
+
+  <!-- link javascript file-->
+ <script src="./js-folder/data.js"></script>
+ <script src="./js-folder/checkout.js"></script>
+
+  <!--jquery cdn link-->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!--jquery mask cdn link-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+</html>

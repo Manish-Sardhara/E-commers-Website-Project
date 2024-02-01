@@ -1,0 +1,228 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+          <meta charset="UTF-8">
+
+     <meta name="description" content="create a Ecommers Website using html,css, and javascript">
+     
+     <meta name="keyword" content="Ecommers Shop Page">
+     
+     <meta name="author" content="Manish Sardhara">
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Shop Page</title>
+
+     <!-- bootstrap fontawesome cdn link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+     <!-- link stylesheet file-->
+     <link rel="styleSheet" href="./css/style.css">
+
+     </head>
+     <body>
+
+        <!-- sign in and sign up form section start -->
+    <section class="home">
+     <div class="form-container">
+          <i class="bi bi-x form-close"></i>
+       <!-- Login From -->
+       <div class="form login-form">
+         <div id="login-form">
+           <h2>Login</h2>
+           <div class="input-box log-in">
+             <input type="email" id="logEmail" placeholder="Enter your email" autocomplete="off">
+             <i class="bi bi-envelope email"></i>
+             <p>Error Msg</p>
+           </div>
+           <div class="input-box  log-in">
+             <input type="password" id="logPass" placeholder="Enter your password" autocomplete="off">
+             <i class="bi bi-lock password"></i>
+            <p>Error Msg</p>
+              <!--
+             <i class="uil uil-eye-slash pw-hide"></i>
+             -->
+           </div>
+           <div class="option-field">
+             <span class="checkbox">
+               <input type="checkbox" id="check">
+               <label for="check">Remember me</label>
+             </span>
+             <a href="#" class="forgot-pw">Forgot password?</a>
+           </div>
+           <button class="button" type="submit" onclick="validateLoginForm()">Login Now</button>
+           <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </div>
+       </div>
+       <!-- Signup From -->
+       <div class="form signup-form">
+         <div id="signup-form">
+           <h2>Signup</h2>
+           <div class="input-box sign-up">
+             <input type="email" placeholder="Enter your email"  id="signupEmail" autocomplete="off">
+             <i class="bi bi-envelope email"></i>
+             <p>Error Msg</p>
+           </div>
+           <div class="input-box sign-up">
+             <input type="password" placeholder="Create password" id="signupPass" autocomplete="off">
+             <i class="bi bi-lock password"></i>
+             <p>Error Msg</p>
+             <!--
+             <i class="uil uil-eye-slash pw-hide"></i>
+             -->
+           </div>
+           <div class="input-box sign-up">
+             <input type="password" placeholder="Confirm password" id="signupCpass" autocomplete="off">
+             <i class="bi bi-lock password"></i>
+             <p>Error Msg</p>
+             <!--
+             <i class="uil uil-eye-slash pw-hide"></i>
+             -->
+           </div>
+           <button class="button" type="submit" onclick="validateSignupForm()">Signup Now</button>
+           <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </div>
+       </div>
+     </div>
+   </section>
+<!-- sign in and sign up form section end -->
+
+     <!-- header section start -->
+
+     <section id="header">
+
+          <a href="#"><img src="img/logo.png"  class="logo" alt="website-logo-image"></a>
+     
+          <div>
+          <!-- ul part start -->
+          <ul id="navbar">
+               <li><a href="index.html" target="_self">Home</a></li>
+               <li><a class="active" href="shop.html" target="_self">Shop</a></li>
+               <li><a href="blog.html" target="_self">Blog</a></li>
+               <li><a href="about.html" target="_self">About</a></li>
+               <li><a href="contact.html" target="_self">Contact</a></li>
+               <li id="lg-bag"><a href="cart.html" target="_self"><i class="bi bi-bag bag"></i></a></li>
+               <span id="cartAmount" class="cartAmount">0</span>
+               <a href="#" id="close"><i class="bi bi-x"></i></a>
+               <li><a href="#" id="form-open"><i class="bi bi-person"></i></a></li>
+          </ul>
+          <!-- ul part end -->
+          </div>
+          <!-- hamburger menu sectio icon section start -->
+          <div class="mobile">
+               <a href="cart.html" target="_self"><i class="bi bi-bag bag2"></i></a>
+               <span id="cartAmount" class="cartAmount cartAmountTwo">0</span>
+               <i id="bar" class="bi bi-list"></i> 
+          </div>
+          <!-- hamburger menu sectio icon section end -->
+          </section>
+
+     <!-- header section end -->
+
+     <!-- page-header section start -->
+
+          <section id="page-header" class="shop-page">
+          <h2>#StayHome</h2>
+          <p>Save more with coupons & up to 70% off!</p>
+          </section>
+
+     <!-- page-header section end -->
+
+     <!--shop page product section start -->
+
+     <section id="product1" class="section-p1">
+          <h2>New Arrival</h2>
+          <p>Summer Collection New Morden Design</p>
+     
+          <div class="pro-container" id="shop"> </div>
+          
+     </section>
+
+     <!--shop page product section end -->
+
+     <!-- pagination section start -->
+
+     <section id="pagination" class="section-p1">
+          <ul class="listPage">
+               
+          </ul>
+     </section>
+
+     <!-- pagination section end -->
+
+     <!-- newsletter section start -->
+
+     <section id="newsletter" class="section-p1 section-m1">
+     <div class="newstext">
+          <h4>Sign Up For Newsletters</h4>
+          <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+     </div>
+
+     </section>
+
+     <!-- newsletter section end -->
+
+     <!-- footer section start -->
+
+     <footer class="section-p1">
+
+          <div class="col">
+               <img class="logo" src="img/logo.png" alt="website-logo-image">
+               <h4>Contact</h4>
+               <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+               <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+               <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+               <div class="follow">
+               <h4>Follow us</h4>
+               <div class="icon">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+               </div>
+               </div>
+          </div>
+
+          <div class="col">
+               <h4>About</h4>
+               <a href="about.html">About Us</a>
+               <a href="#">Delivery Information</a>
+               <a href="#">Privacy Policy</a>
+               <a href="#">Terms & Conditions</a>
+               <a href="contact.html">Contact Us</a> 
+          </div>
+
+          <div class="col">
+               <h4>My Account</h4>
+               <a href="#">Sign In</a>
+               <a href="cart.html">View Cart</a>
+               <a href="#">My Wishlist</a>
+               <a href="#">Track My Order</a>
+               <a href="about.html">Help</a> 
+          </div>
+
+          <div class="col install">
+               <h4>Install App</h4>
+               <p>From App Store or Google Play</p>
+               <div class="row">
+                    <img src="img/pay/app.jpg" alt="pay-image">
+                    <img src="img/pay/play.jpg" alt="pay-image">
+               </div>
+               <p>From App Store or Google Play</p>
+               <img src="img/pay/pay.png" alt="playstore-image">
+          </div>
+
+          <div class="copyright">
+               <p>Cara © All Rights Reserved.</p>
+          </div>
+
+     </footer>
+
+     <!-- footer section end -->
+
+     <!-- link javascript file-->
+     <script src="./js-folder/data.js"></script>
+     <script src="./js-folder/shop.js"></script>
+     </body>
+     </html>
